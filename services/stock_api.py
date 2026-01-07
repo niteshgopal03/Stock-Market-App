@@ -1,6 +1,5 @@
 import pandas as pd
 import plotly.graph_objects as go
-from config import API_KEY, BASE_URL
 from services.rate_limiter import Safe_request
 
 class StockAPI:
