@@ -1,6 +1,9 @@
 import time
 import requests
-from config import TIMEOUT, MAX_RETRIES
+
+TIMEOUT = 15
+MAX_RETRIES = 3
+RETRY_DELAY = 3
 
 def Safe_request(url, params):
     for attempt in range(MAX_RETRIES):
