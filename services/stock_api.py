@@ -1,6 +1,11 @@
 import pandas as pd
 import plotly.graph_objects as go
 from services.rate_limiter import Safe_request
+import streamlit as st
+
+BASE_URL = "https://www.alphavantage.co/query"
+API_KEY = st.secrets["ALPHA_VANTAGE_API_KEY"]
+
 
 class StockAPI:
 
